@@ -992,17 +992,21 @@
             border-bottom: 2px solid #333;
         }
 
-        .logo {
-            width: 60px;
-            height: 60px;
-            border: 2px solid #333;
-            border-radius: 50%;
-            margin: 0 auto 10px;
-            display: flex;
+.logo {
+             width: 100px; /* réduit pour header, adapte selon besoin */
+             height: 100px;
+              /* bleu foncé plus doux que noir */
+             border-radius: 50%;
+             margin: 10px auto;
+              display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 12px;
-        }
+           justify-content: center;
+          background-image: url('/logo.png'); /* assure-toi que le chemin est bon */
+          background-size: cover;
+          background-position: center;
+        /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+          transition: transform 0.3s ease-in-out;
+ }
 
         .form-title {
             font-size: 18px;
@@ -1275,7 +1279,7 @@
     <div class="container">
         <!-- En-tête -->
         <div class="header">
-            <div class="logo">IBESR</div>
+            <div class="logo"></div>
             <h1 class="form-title">Formulaire d'Évaluation Sociale et Économique</h1>
             <p class="form-description">
                 Ce formulaire est utilisé dans le cadre de l'évaluation des familles vulnérables dans le but de 
